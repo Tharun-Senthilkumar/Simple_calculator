@@ -161,33 +161,65 @@ public class MainActivity extends AppCompatActivity {
         badd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                f1=Float.parseFloat(et1.getText().toString());
-                et1.setText("");
-                add=1;
+                if(et1.getText().toString().isEmpty())
+                {
+                    f1=Float.parseFloat(et2.getText().toString());
+                    add=1;
+                }
+                else
+                {
+                    f1 = Float.parseFloat(et1.getText().toString());
+                    et1.setText("");
+                    add = 1;
+                }
+
             }
         });
         bsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                f1=Float.parseFloat(et1.getText().toString());
-                et1.setText("");
-                sub=1;
+                if(et1.getText().toString().isEmpty())
+                {
+                    f1=Float.parseFloat(et2.getText().toString());
+                    sub=1;
+                }
+                else {
+                    f1 = Float.parseFloat(et1.getText().toString());
+                    et1.setText("");
+                    sub = 1;
+                }
             }
         });
         bmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                f1=Float.parseFloat(et1.getText().toString());
-                et1.setText("");
-                mul=1;
+                if (et1.getText().toString().isEmpty())
+                {
+                    f1 = Float.parseFloat(et2.getText().toString());
+                    mul = 1;
+                }
+                else
+                {
+                    f1 = Float.parseFloat(et1.getText().toString());
+                    et1.setText("");
+                    mul = 1;
+                }
             }
         });
         bdiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                f1=Float.parseFloat(et1.getText().toString());
-                et1.setText("");
-                div=1;
+                if (et1.getText().toString().isEmpty())
+                {
+                    f1 = Float.parseFloat(et2.getText().toString());
+                    div = 1;
+                }
+                else
+                {
+                    f1 = Float.parseFloat(et1.getText().toString());
+                    et1.setText("");
+                    div = 1;
+                }
             }
         });
         beql.setOnClickListener(new View.OnClickListener()
